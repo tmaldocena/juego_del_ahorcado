@@ -21,10 +21,6 @@ var teclaPulsada = document.querySelector("html");
 var tecla;
 var cambio;
 
-palabra_Inner.addEventListener("touchstart", function(){
-    focus();
-});
-
 botonJugar.addEventListener("click", function(){
     start(randomWord[Math.floor(Math.random() * randomWord.length)]);
 });
@@ -33,7 +29,7 @@ botonRestart.addEventListener("click", function(){
     start(randomWord[Math.floor(Math.random() * randomWord.length)]);    
 });
 
-teclaPulsada.addEventListener("input", function(event){
+teclaPulsada.addEventListener("keydown", function(event){
     
     tecla = event.key.toUpperCase();
     console.log(tecla);
