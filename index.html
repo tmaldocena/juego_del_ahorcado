@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="caja">
+                <h1><img src="img/alura-logo-sin-fondo.png"></h1>
+                <p>Ahorcado Online</p>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="botones">
+                <ul>
+                    <li><button id="jugar">Jugar</button></li>
+                    <li><button id="palabra">Crear Palabra</button></li>
+                </ul>
+            </section>
+            <section class="crear-palabra">
+                <textarea name="palabra" id="creando-palabra" style="resize: none;" cols="30" rows="10" placeholder="Escriba una palabra de 8 letras..." required></textarea>
+                <button id="volver-palabra">Volver</button>
+                <button id="crear-jugar">Jugar</button>
+                </section>
+            <section class="juego">
+                <p id="resultado">.</p>
+                <canvas width="600" height="400"></canvas>
+                <ul class="palabra_adivinar">
+                    <li id="palabraInner">.</li>
+                </ul>
+                <div class="tablero-usadas">
+                    <p id="titulo-usadas">Letras ya Usadas!</p>
+                    <p id="letras-usadas">.</p>
+                </div>
+                <ul class="botonera-juego">
+                    <li><button id="volver-juego">Volver</button></li>
+                    <li><button id="nva-palabra">Nueva Palabra</button></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <img src="img/alura-font-sf.png">
+            <p>Creado por <a href="https://github.com/tmaldocena">Tomás Maldocena</a></p>
+
+        </footer>
+        <script src="js/transiciones.js"></script>
+        <script src="js/ahorcado.js"></script>
+        <script src="js/juego.js"></script>
+        <script src="js/crear-palabra.js"></script>
+    </body>
+</html>

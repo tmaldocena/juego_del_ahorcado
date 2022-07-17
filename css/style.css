@@ -1,0 +1,225 @@
+body{
+    font-family: 'Neucha', cursive;
+}
+
+header{
+    background-color: #003049;
+    padding: 5px 0;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #e0d283;
+}
+
+.caja img{
+    width: 60px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.caja p{
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+}
+
+body{
+    background-image: url("https://thumbs.gfycat.com/BasicWeightyFeline-size_restricted.gif");
+    background-repeat: repeat;
+}
+
+.botones{
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.botones ul{
+    position: relative;
+    text-align: center;
+    margin: 5em;
+}
+
+li{
+    padding: 1em;
+}
+
+.botones button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #e0d283;
+    color: #003049;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+}
+
+.botones button:hover{
+    background: #b9ad69;
+    transform: scale(1.2);
+}
+
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.crear-palabra{
+    text-align: center;
+    position: relative;
+}
+
+#resultado{
+    color: #e0d283;
+}
+
+.crear-palabra button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #e0d283;
+    color: #003049;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+    position: relative;
+}
+
+.crear-palabra button:hover{
+    background: #b9ad69;
+    transform: scale(1.2);
+}
+
+#creando-palabra{
+    background-color: #10121d;
+    opacity: 0.5;
+    color: #e0d283;
+    border-radius: 5px;
+    resize: none;
+    width: 60%;
+    position: relative;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 2em 20%;
+}
+
+.juego{
+    position: relative;
+    text-align: center;
+
+}
+
+#resultado{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.palabra_adivinar{
+    font-size: 50px;
+    color: wheat;
+}
+
+.juego canvas{
+    margin: 1em;
+    vertical-align: top;
+}
+
+.juego li{
+    display: inline-block;
+}
+
+.tablero-usadas{
+    position: relative;
+    left: 400px;
+    width: 40%;
+    margin: auto;
+    bottom: 550px;
+}
+
+#titulo-usadas{
+    font-size: 50px;
+    color: #b9ad69;
+}
+
+#letras-usadas{
+    font-size: 30px;
+    color: wheat;
+    margin-top: 1em;
+}
+
+.botonera-juego{
+    position: relative;
+    right: 450px;
+    bottom: 500px;
+}
+
+.juego button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #e0d283;
+    color: #003049;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+}
+
+.juego button:hover{
+    background: #b9ad69;
+    transform: scale(1.2);
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(rgba(16, 18, 29,0), rgba(16, 18, 29, 1));
+    margin: 3em 0;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer p{
+    position: relative;
+    font-size: 22px;
+    color: wheat;
+}
+
+@media screen and (max-width:460px){
+
+    .caja{
+        width: auto;
+    }
+
+    .juego canvas{
+        margin: 0;
+        width: 100%;
+    }
+    .palabra_adivinar{
+        font-size: 40px;
+    }
+
+    .tablero-usadas{
+        position: unset;
+        width: auto;
+    }
+
+    .botonera-juego{
+        right: 0;
+        bottom: 0;
+    }
+}
