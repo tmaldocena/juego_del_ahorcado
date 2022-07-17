@@ -22,7 +22,7 @@ var tecla;
 var cambio;
 
 palabra_Inner.addEventListener("touchstart", function(){
-    prompt();
+    focus();
 });
 
 botonJugar.addEventListener("click", function(){
