@@ -33,7 +33,7 @@ botonRestart.addEventListener("click", function(){
     start(randomWord[Math.floor(Math.random() * randomWord.length)]);    
 });
 
-teclaPulsada.addEventListener("keydown", function(event){
+teclaPulsada.addEventListener("input", function(event){
     
     tecla = event.key.toUpperCase();
     console.log(tecla);
