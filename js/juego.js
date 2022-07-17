@@ -21,6 +21,9 @@ var teclaPulsada = document.querySelector("html");
 var tecla;
 var cambio;
 
+palabra_Inner.addEventListener("touchstart", function(){
+    prompt();
+});
 
 botonJugar.addEventListener("click", function(){
     start(randomWord[Math.floor(Math.random() * randomWord.length)]);
